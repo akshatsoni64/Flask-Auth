@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <!-- Main Page Container -->
+    <div class="container">
+      <!-- Title -->
+      <h1 class="mt-4 display-4 mb-5 text-center text-danger">Flask Authentication</h1>
+      <div>
+        {% for err in error %}
+          <div class="alert alert-danger">
+            <strong>Error:</strong> {{err}}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="row">
+        <!-- Login Form -->
+        <div class="col border border-success p-5 mr-3">
+          <form action="{{ url_for('login') }}" method="post">
+            <div class="form-group">
+              <label for="uname">Username*</label>
+              <input id="uname" name="uname" type="text" class="form-control" required/>
+            </div>
+            <div class="form-group">
+              <label for="pswd">Password*</label>
+              <input id="pswd" name="pswd" type="password" class="form-control" required/>
+            </div>
+            <input type="submit" value="Login" class="btn btn-outline-success">
+          </form>
+        </div>
+        <!-- Login Form End -->
+        <!-- Registration Form -->
+        <div class="col border border-primary p-5 ml-3">
+          <form action="{{ url_for('get_register') }}" method="post">
+            <div class="form-group">
+              <label for="name">Name*</label>
+              <input id="name" name="name" type="text" class="form-control" required/>
+            </div>
+            <div class="form-group">
+              <label for="uname">Username*</label>
+              <input id="uname" name="uname" type="text" class="form-control" required/>
+            </div>
+            <div class="form-group">
+              <label for="pswd1">Password*</label>
+              <input id="pswd1" name="pswd1" type="password" class="form-control" required/>
+            </div>
+            <div class="form-group">
+              <label for="pswd2">Confirm Password*</label>
+              <input id="pswd2" name="pswd2" type="password" class="form-control" required/>
+            </div>
+            <input type="submit" value="Register" class="btn btn-outline-primary">
+          </form>
+        </div>
+        <!-- Registration Form End -->
+      </div>
+    </div>
+    <!-- Main Page Container End -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>

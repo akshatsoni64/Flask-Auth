@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <!-- Main Page Container -->
+    <div class="container">
+        <!-- Title -->
+        <h1 class="mt-4 display-4 mb-5 text-center text-danger">Classforma Teams</h1>
+        <div class="row border border-success p-5">
+            <div class="col">
+                Welcome <b>{{ session.username }}</b>
+                <a href="{{ url_for('logout') }}" class="float-right btn btn-outline-danger" title="Click here to get out">Logout</a>
+            </div>
+        </div>
+    </div>
+    <!-- Main Page Container End -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>

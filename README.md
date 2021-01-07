@@ -12,4 +12,4 @@ Authentication System with Flask API Backend
 <code>sudo docker build -t flask_auth .</code><br>
 - Run the docker container<br>
 <code>sudo docker run -ti -p 7000:7000 flask_auth</code><br>
-- Go to <a target="_blank" href="http://localhost:7000">App</a><br>
+- Go to <a href="http://localhost:7000">App</a><br>

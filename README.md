@@ -6,6 +6,8 @@ Authentication System with Flask API Backend
 <code>git clone https://github.com/akshatsoni64/Flask-Auth.git</code><br>
 - Navigate to project directory<br>
 <code>cd Flask-Auth</code><br>
+- Install dependencies from requirements.txt<br>
+<code>pip3 install -r requirements.txt</code>
 - Initialize the database<br>
 <code>python3 db.py</code><br>
 - Build the docker image<br>
